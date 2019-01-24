@@ -65,6 +65,33 @@ class ExamController extends Controller
 
         return redirect('exam/generate');
 
+        //  REVAMPING THE WHOLE EXAM CONTROLLER
+
+        //  Validating input
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required'
+        ]);
+
+        //  Inserting employee information
+        $emp = new Employee;
+        try{
+            $emp->name = $request->name;
+            $emp->email = $request->email;
+            $emp->progress = 1; //  using 1 and increment for the json file naming convention. exam1.json, exam2.json, ... 'exam' . $progress . '.json'
+            $emp->save();
+        }
+        catch(Exception $e){
+            return $e;
+            //abort(404, $e); //  Throws a 404 error
+        }
+
+        //  Add session data
+        session(['started' => 1]);
+        session(['id' => $emp->id]);
+        session(['progress' => $emp->progress]);
+        
+        return redirect('exam/generate');
     }
 
     /**
