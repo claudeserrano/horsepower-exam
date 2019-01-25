@@ -13,11 +13,13 @@ class CreateTestsTable extends Migration
      */
     public function up()
     {
-        Schema::table('tests', function (Blueprint $table) {
+        Schema::create('tests', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('exam_id');
             $table->foreign('exam_id')->references('id')->on('exams');
-            $table->float('score', 4, 2);
+            $table->float('score', 8, 2);
             $table->string('template_id', 50);
+            $table->timestamps();
         });
     }
 
@@ -28,8 +30,6 @@ class CreateTestsTable extends Migration
      */
     public function down()
     {
-        Schema::table('tests', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('tests');
     }
 }

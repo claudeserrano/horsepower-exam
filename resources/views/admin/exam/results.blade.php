@@ -18,10 +18,10 @@
         </tr>
       </thead>
       <tbody>
-        @foreach($arr as $data)
+        @foreach($emps as $emp)
           <tr>
-            <td><a href="results/{{$data['id']}}">{{$data['name']}}</a></td>
-            <td>{{$data['average']}}</td>
+            <td><a href="results/{{$emp->id}}">{{$emp->name}}</a></td>
+            <td>{{$emp->averageOverallScore()}} %</td>
           </tr>
         @endforeach
       </tbody>

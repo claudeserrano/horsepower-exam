@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-Electical Exam - Level {{session('page')}}
+Electical Exam - {{$data->description->title}}
 @endsection
 
 @section('content')
@@ -18,11 +18,11 @@ Electical Exam - Level {{session('page')}}
                 </center>
             </div>
             <div class="panel-body">
-                <form class="form-horizontal" id="examForm" role="form" method="POST" action="{{ route('submitExam', ['level' => session('page')]) }}">
+                <form class="form-horizontal" id="examForm" role="form" method="POST" action="{{ route('submitExam', ['progress' => session('progress')]) }}">
                     
                 {{ csrf_field() }}
                 
-              
+                <input type="hidden" name="template_id" value="{{$data->description->id}}" />
 
                 <div class="col-lg-12">
                     <center>

@@ -13,8 +13,9 @@ class CreateExamsTable extends Migration
      */
     public function up()
     {
-        Schema::table('exams', function (Blueprint $table) {
+        Schema::create('exams', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('employee_id');
             $table->foreign('employee_id')->references('id')->on('employees');
             $table->float('score', 4, 2);
             $table->timestamps();
@@ -28,8 +29,6 @@ class CreateExamsTable extends Migration
      */
     public function down()
     {
-        Schema::table('exams', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('exams');
     }
 }

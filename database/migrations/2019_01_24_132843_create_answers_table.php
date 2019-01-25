@@ -13,11 +13,13 @@ class CreateAnswersTable extends Migration
      */
     public function up()
     {
-        Schema::table('answers', function (Blueprint $table) {
+        Schema::create('answers', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('test_id');
             $table->foreign('test_id')->references('id')->on('tests');
-            $table->tinyInteger('value');
-            $table->tinyInteger('correct');
+            $table->tinyInteger('value')->nullable();
+            $table->text('question_id');
+            $table->boolean('correct');
         });
     }
 
@@ -28,8 +30,6 @@ class CreateAnswersTable extends Migration
      */
     public function down()
     {
-        Schema::table('answers', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('answers');
     }
 }

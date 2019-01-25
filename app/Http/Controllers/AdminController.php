@@ -41,24 +41,10 @@ class AdminController extends Controller
      */
     public function getExamResults()
     {
-    	$guests = Guest::all()->where('type', '<>', 'newhire');
-    	$arr = [];
-
-    	foreach($guests as $guest)
-    	{
-    		$scores = $guest->scores;
-            $avg = 0;
-
-            if($scores != null && count($scores) > 0){
-                $all = [];
-                foreach($scores as $score)
-                    array_push($all, $score->score);
-                $avg = array_sum($all) / count($all);
-            }
-            array_push($arr, ['name' => $guest->name, 'id' => $guest->id, 'average' => number_format($avg,2)]);
-    	}
-
-    	return view('admin.exam.results')->with('arr', $arr);
+    	$emps = \App\Employee::all();
+        
+    	return view('admin.exam.results')->with(['emps' => $emps]);
+        
     }
 
     /**
@@ -69,7 +55,8 @@ class AdminController extends Controller
      */
     public function getEmployeeResults($id)
     {
-        $guest = Guest::find($id);
+        $emp = \App\Employee::find($id);
+        return view('admin.exam.results_emp')->with(['emp' => $emp]);
 
         $scores = $guest->scores->where('level', '<>', 4);
         $final = $guest->scores->where('level', '=', 4)->first();

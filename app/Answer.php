@@ -15,10 +15,10 @@ class Answer extends Model
 
 
     /**
-    * Get the exam/score it belongs to.
+    * Get the test it belongs to.
     */
-    public function score()
+    public function test()
     {
-        return $this->belongsTo('App\Score');
+        return $this->belongsTo('App\Test');
     }
 }
