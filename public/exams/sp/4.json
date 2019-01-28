@@ -8,76 +8,76 @@
         {
             "name" : "ans1",
             "type" : "multiple",
-            "label" : "Ohms Law is the study of how ________________ interrelate to one another.",
+            "label" : "Ohms Law es el estudio de cómo ________________ se relacionan entre sí.",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Copper, Gold, and Zinc"
+                    "label" : "Cobre, Oro y Zinc"
                 },
                 {
                     "value" : 2,
-                    "label" : "Copper, Insulation, and AWG"
+                    "label" : "Cobre, Aislamiento y AWG"
                 },
                 {
                     "value" : 3,
-                    "label" : "Voltage, Resistance, and Amperage"
+                    "label" : "Voltaje, Resistencia y Amperaje"
                 },
                 {
                     "value" : 4,
-                    "label" : "Electricians, Carpenters, and Masons"
+                    "label" : "Electricistas, Carpinteros y Albañiles"
                 }
             ]
         },
         {
             "name" : "ans2",
             "type" : "multiple",
-            "label" : "The three items that will dictate the severity of an electrical shock are:",
+            "label" : "Los tres elementos que dictarán la gravedad de una descarga eléctrica son:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Location on the jobsite where the accident occurred"
+                    "label" : "Ubicación en el lugar de trabajo donde ocurrió el accidente"
                 },
                 {
                     "value" : 2,
-                    "label" : "Time and exposure and amount of amperage on the circuit"
+                    "label" : "Tiempo y exposición y cantidad de amperaje en el circuito"
                 },
                 {
                     "value" : 3,
-                    "label" : "Location of where the body was hit"
+                    "label" : "Ubicación de donde el cuerpo fue golpeado"
                 },
                 {
                     "value" : 4,
-                    "label" : "Only (B) and (C)"
+                    "label" : "Solo (B) y (C)"
                 }
             ]
         },
         {
             "name" : "ans3",
             "type" : "multiple",
-            "label" : "The National Electrical Code Book is revised every:",
+            "label" : "El Libro del Código Eléctrico Nacional se revisa cada:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "4 1/2 years"
+                    "label" : "4 1/2 años"
                 },
                 {
                     "value" : 2,
-                    "label" : "4 years"
+                    "label" : "4 años"
                 },
                 {
                     "value" : 3,
-                    "label" : "3 years"
+                    "label" : "3 años"
                 },
                 {
                     "value" : 4,
-                    "label" : "None of the above"
+                    "label" : "Ninguna de las anteriores"
                 }
             ]
         },
         {
             "name" : "ans4",
             "type" : "multiple",
-            "label" : "The resistance, in ohms, of a 25 ampere, 50 millivolt shunt is approximately:",
+            "label" : "La resistencia, en ohmios, de un cortocircuito de 25 amperios y 50 milivoltios es aproximadamente:",
             "choices" : [
                 {
                     "value" : 1,
@@ -100,145 +100,145 @@
         {
             "name" : "ans5",
             "type" : "multiple",
-            "label" : "A cable composed of two insulated stranded conductors laid parallel, having a common cover, is called a:",
+            "label" : "Un cable compuesto por dos conductores trenzados aislados colocados en paralelo, que tiene una cubierta común, se llama:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Twin cable"
+                    "label" : "Cable gemelo"
                 },
                 {
                     "value" : 2,
-                    "label" : "Duplex cable"
+                    "label" : "Cable dúplex"
                 },
                 {
                     "value" : 3,
-                    "label" : "Concentric cable"
+                    "label" : "Cable concéntrico"
                 },
                 {
                     "value" : 4,
-                    "label" : "Sector cable"
+                    "label" : "Cable de sector"
                 }
             ]
         },
         {
             "name" : "ans6",
             "type" : "multiple",
-            "label" : "Of the following, the poorest conductor of electricity is:",
+            "label" : "De los siguientes, el conductor más pobre de la electricidad es:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Carbon"
+                    "label" : "Carbón"
                 },
                 {
                     "value" : 2,
-                    "label" : "Aluminum"
+                    "label" : "Aluminio"
                 },
                 {
                     "value" : 3,
-                    "label" : "Copper"
+                    "label" : "Cobre"
                 },
                 {
                     "value" : 4,
-                    "label" : "Silver"
+                    "label" : "Plata"
                 }
             ]
         },
         {
             "name" : "ans7",
             "type" : "multiple",
-            "label" : "A service drop refers to the:",
+            "label" : "Una caída del servicio se refiere a:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Wire from the power company pole to the side of the building"
+                    "label" : "Cable desde el poste de la compañía eléctrica al costado del edificio"
                 },
                 {
                     "value" : 2,
-                    "label" : "Wire from the secondary rack on the building to the meter"
+                    "label" : "Cable desde la parrilla secundaria en el edificio hasta el medidor"
                 },
                 {
                     "value" : 3,
-                    "label" : "Wire from the building to the fuse or breaker panel"
+                    "label" : "Cable desde el edificio al panel fusible o interruptor"
                 },
                 {
                     "value" : 4,
-                    "label" : "Conductor voltage drop from the pole to the fuse or breaker panel"
+                    "label" : "Caída de tensión del conductor desde el polo al panel de fusibles o interruptores"
                 }
             ]
         },
         {
             "name" : "ans8",
             "type" : "multiple",
-            "label" : "A bell transformer changes:",
+            "label" : "Un transformador de campana cambia:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "A.C. to D.C."
+                    "label" : "A.C. a D.C."
                 },
                 {
                     "value" : 2,
-                    "label" : "Low current to low voltage"
+                    "label" : "Baja corriente a baja tensión"
                 },
                 {
                     "value" : 3,
-                    "label" : "High voltage to low voltage"
+                    "label" : "Alto voltaje a bajo voltaje"
                 },
                 {
                     "value" : 4,
-                    "label" : "Low voltage to high current"
+                    "label" : "Baja tensión a alta corriente"
                 }
             ]
         },
         {
             "name" : "ans9",
             "type" : "multiple",
-            "label" : "In a parallel of circuit lamps, the most current will flow in the branch whose lamp:",
+            "label" : "En un paralelo de lámparas de circuito, la corriente más corriente fluirá en la rama cuya lámpara:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Burns the dimmest"
+                    "label" : "Se quema el más oscuro"
                 },
                 {
                     "value" : 2,
-                    "label" : "Has the least amount of resistance"
+                    "label" : "Tiene la menor cantidad de resistencia"
                 },
                 {
                     "value" : 3,
-                    "label" : "Has the most resistance"
+                    "label" : "Tiene la mayor resistencia"
                 },
                 {
                     "value" : 4,
-                    "label" : "Has the least wattage"
+                    "label" : "Tiene el menor vataje"
                 }
             ]
         },
         {
             "name" : "ans10",
             "type" : "multiple",
-            "label" : "Determining a positive wire on a single phase line is:",
+            "label" : "La determinación de un cable positivo en una línea monofásica es:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Possible with a voltmeter"
+                    "label" : "Posible con un voltímetro"
                 },
                 {
                     "value" : 2,
-                    "label" : "Possible with an ammeter"
+                    "label" : "Posible con un amperímetro"
                 },
                 {
                     "value" : 3,
-                    "label" : "An impossibility"
+                    "label" : "Una imposibilidad"
                 },
                 {
                     "value" : 4,
-                    "label" : "Possible with a wattmeter"
+                    "label" : "Posible con un vatímetro"
                 }
             ]
         },
         {
             "name" : "ans11",
             "type" : "multiple",
-            "label" : "A voltage of __________________ V is not considered a nominal voltage.",
+            "label" : "Una tensión de __________________ V no se considera una tensión nominal.",
             "choices" : [
                 {
                     "value" : 1,
@@ -254,99 +254,99 @@
                 },
                 {
                     "value" : 4,
-                    "label" : "None of the above"
+                    "label" : "Ninguna de las anteriores"
                 }
             ]
         },
         {
             "name" : "ans12",
             "type" : "multiple",
-            "label" : "Multi-wire branch circuits shall supply only:",
+            "label" : "Los circuitos derivados de cables múltiples suministrarán únicamente:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Line to phase loads"
+                    "label" : "Cargas de línea a fase"
                 },
                 {
                     "value" : 2,
-                    "label" : "Line to neutral loads"
+                    "label" : "Carga de línea a neutra"
                 },
                 {
                     "value" : 3,
-                    "label" : "Line to ground loads"
+                    "label" : "Cargas de línea a tierra"
                 },
                 {
                     "value" : 4,
-                    "label" : "Phase to phase loads"
+                    "label" : "Cargas de fase a fase"
                 }
             ]
         },
         {
             "name" : "ans13",
             "type" : "multiple",
-            "label" : "Which part of the control circuit does a motor relay belong?",
+            "label" : "¿A qué parte del circuito de control pertenece un relé del motor?",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Signal"
+                    "label" : "Señal"
                 },
                 {
                     "value" : 2,
-                    "label" : "Decision"
+                    "label" : "Decisión"
                 },
                 {
                     "value" : 3,
-                    "label" : "Power"
+                    "label" : "Poder"
                 },
                 {
                     "value" : 4,
-                    "label" : "Control"
+                    "label" : "Controlar"
                 }
             ]
         },
         {
             "name" : "ans14",
             "type" : "multiple",
-            "label" : "Sparking at the brushes of a larger DC motor is reduced by:",
+            "label" : "Las chispas en las escobillas de un motor de CC más grande se reducen de la siguiente manera:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Commutators"
+                    "label" : "Conmutadores"
                 },
                 {
                     "value" : 2,
-                    "label" : "Inter-poles"
+                    "label" : "Interpolares"
                 },
                 {
                     "value" : 3,
-                    "label" : "Additional main poles"
+                    "label" : "Polos principales adicionales"
                 },
                 {
                     "value" : 4,
-                    "label" : "Insulators"
+                    "label" : "Aisladores"
                 }
             ]
         },
         {
             "name" : "ans15",
             "type" : "multiple",
-            "label" : "The speed of an AC squirrel cage motor can be changed by:",
+            "label" : "La velocidad de un motor de jaula de ardilla AC se puede cambiar de la siguiente manera:",
             "choices" : [
                 {
                     "value" : 1,
-                    "label" : "Changing the number of poles"
+                    "label" : "Cambiar la cantidad de polos"
                 },
                 {
                     "value" : 2,
-                    "label" : "Changing the supply current"
+                    "label" : "Cambiar la corriente de suministro"
                 },
                 {
                     "value" : 3,
-                    "label" : "Changing the supply voltage"
+                    "label" : "Cambiar el voltaje de suministro"
                 },
                 {
                     "value" : 4,
-                    "label" : "Adding inter-poles"
+                    "label" : "Agregar interpolares"
                 }
             ]
         }

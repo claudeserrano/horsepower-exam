@@ -14,10 +14,46 @@
           </center>
         </div>
         <div class="panel-body">
-          {{$emp->getClassAvgScore($exam->id, 1)}}
+          <center>
+          @foreach($exam->tests as $test)
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4>{{$test->template_subtitle}}</h4>
+                    </div>
+                    <div class="panel-body">
+                      <h4><b>Score :</b> <br/> {{number_format($test->score,2)}} %</h4>
+                    </div>
+                </div>
+            </div>
+          @endforeach
+          <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4>School Classification</h4>
+                </div>
+                <div class="panel-body">
+                
+                  <div class="col-lg-1">
+                  </div>
+                @for($i = 1; $i <= 5; $i++)
+                  <div class="col-lg-2">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4>Year {{$i}}</h4>
+                          </div>
+                          <div class="panel-body">
+                            <h4><b>Score :</b> <br/> {{$emp->getClassAvgScore($exam->id, $i)}}  %</h4>
+                          </div>
+                      </div>
+                  </div>
+                @endfor
+                </div>
+              </div>
+          </div>
+          </center>
         </div>
       </div>
     @endforeach
-        
   </div>
 @endsection

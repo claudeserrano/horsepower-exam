@@ -19,6 +19,8 @@ class CreateTestsTable extends Migration
             $table->foreign('exam_id')->references('id')->on('exams');
             $table->float('score', 8, 2);
             $table->string('template_id', 50);
+            $table->string('template_title', 50);
+            $table->string('template_subtitle', 50);
             $table->timestamps();
         });
     }

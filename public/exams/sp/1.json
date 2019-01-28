@@ -1,0 +1,224 @@
+{
+    "description" : {
+        "id" : "hpeElec1",
+        "title" : "Electrical Exam",
+        "subtitle" : "Level 1"
+    },
+    "questions" : [
+        {    
+            "name" : "ans1",
+            "type" : "multiple",
+            "label" : "En un receptáculo de 110 voltios, ¿a qué tornillo de color va el conductor caliente?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Negro"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Oro"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Plata"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Verde"
+                }
+            ]
+        },
+        {    
+            "name" : "ans2",
+            "type" : "multiple",
+            "label" : "¿Cuál es el tamaño de cable más frecuentemente utilizado para el cableado interior en Nueva York?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "8 AWG"
+                },
+                {
+                    "value" : 2,
+                    "label" : "12 AWG"
+                },
+                {
+                    "value" : 3,
+                    "label" : "15 AWG"
+                },
+                {
+                    "value" : 4,
+                    "label" : "18 AWG"
+                }
+            ]
+        },
+        {    
+            "name" : "ans3",
+            "type" : "multiple",
+            "label" : "¿Cuál de las siguientes ubicaciones probablemente requeriría la instalación de un Receptáculo GFI?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Sala"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Armario"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Cuarto"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Baño"
+                }
+            ]
+        },
+        {    
+            "name" : "ans4",
+            "type" : "tof",
+            "label" : "Todas las cajas metálicas eléctricas y los contenedores deben estar conectados a tierra.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Cierto"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Falso"
+                }
+            ]
+            
+        },
+        {
+            "name" : "ans5",
+            "type" : "tof",
+            "label" : "Un calentador de 110 voltios no necesita un conductor neutral.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Cierto"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Falso"
+                }
+            ]
+        },
+        {   
+            "name" : "ans6",
+            "type" : "multiple",
+            "label" : "Un interruptor de circuito es un dispositivo diseñado para __________ el circuito automáticamente en una sobreintensidad por delante del interruptor de circuito.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Energizar"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Reiniciar"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Conectar"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Abierto"
+                }
+            ]
+        },
+        {    
+            "name" : "ans7",
+            "type" : "multiple",
+            "label" : "¿Qué ubicación no requiere el uso de GFI?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Baño"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Sala"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Encimeras de cocina"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Salida al aire libre"
+                }
+            ]
+        },
+        {    
+            "name" : "ans8",
+            "type" : "multiple",
+            "label" : "¿Cuál es la distancia máxima entre dos receptáculos en la pared de un dormitorio que mide 20 pies de largo sin puertas o ventanas en esa pared?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "8 pies"
+                },
+                {
+                    "value" : 2,
+                    "label" : "12 pies"
+                },
+                {
+                    "value" : 3,
+                    "label" : "10 pies"
+                },
+                {
+                    "value" : 4,
+                    "label" : "18 pies"
+                }
+            ]
+        },
+        {    
+            "name" : "ans9",
+            "type" : "multiple",
+            "label" : "El tamaño del interruptor no debe exceder ___________ amperios para # 12 THHN awg.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "25 amps"
+                },
+                {
+                    "value" : 2,
+                    "label" : "30 amps"
+                },
+                {
+                    "value" : 3,
+                    "label" : "15 amps"
+                },
+                {
+                    "value" : 4,
+                    "label" : "20 amps"
+                }
+            ]
+        },
+        {    
+            "name" : "ans10",
+            "type" : "multiple",
+            "label" : "¿En qué tornillo conecta el cable de alimentación en un interruptor de 3 vías?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Oro"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Plata"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Verde"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Negro"
+                }
+            ]
+        }
+    ]
+}

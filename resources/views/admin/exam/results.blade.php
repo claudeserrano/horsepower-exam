@@ -21,7 +21,7 @@
         @foreach($emps as $emp)
           <tr>
             <td><a href="results/{{$emp->id}}">{{$emp->name}}</a></td>
-            <td>{{$emp->averageOverallScore()}} %</td>
+            <td>{{number_format($emp->averageOverallScore(), 2)}} %</td>
           </tr>
         @endforeach
       </tbody>
@@ -33,7 +33,6 @@
 
     <script>
       $(document).ready(function(){
-
             tb = $("#tb").DataTable({
             });
       })

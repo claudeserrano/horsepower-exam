@@ -1,0 +1,282 @@
+{
+    "description" : {
+        "id" : "hpeElec2",
+        "title" : "Electrical Exam",
+        "subtitle" : "Level 2"
+    },
+    "questions" : [
+        {
+            "name" : "ans1",
+            "type" : "multiple",
+            "label" : "¿Qué tamaño de cable debe usarse para un horno doméstico de 50 amperios?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "#6"
+                },
+                {
+                    "value" : 2,
+                    "label" : "#8"
+                },
+                {
+                    "value" : 3,
+                    "label" : "#4"
+                },
+                {
+                    "value" : 4,
+                    "label" : "#1/0"
+                }
+            ]
+        },
+
+        {
+            "name" : "ans2",
+            "type" : "multiple",
+            "label" : "¿Cuántas pulgadas deduces para un EMT de 1/2\" a 90 &deg;?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "4 1/2\""
+                },
+                {
+                    "value" : 2,
+                    "label" : "5 1/2\""
+                },
+                {
+                    "value" : 3,
+                    "label" : "5\""
+                },
+                {
+                    "value" : 4,
+                    "label" : "6\""
+                }
+            ]
+        },
+            
+        {
+            "name" : "ans3",
+            "type" : "multiple",
+            "label" : "¿Qué tamaño de interruptor de circuito pones en un cable # 10?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "100"
+                },
+                {
+                    "value" : 2,
+                    "label" : "25"
+                },
+                {
+                    "value" : 3,
+                    "label" : "40"
+                },
+                {
+                    "value" : 4,
+                    "label" : "30"
+                }
+            ]
+        },
+            
+        {
+            "name" : "ans4",
+            "type" : "multiple",
+            "label" : "En una cocina doméstica para un refrigerador, ¿qué tipo de receptáculo instalas, regular o GFI",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Regular"
+                },
+                {
+                    "value" : 2,
+                    "label" : "GFCI"
+                },
+                {
+                    "value" : 3,
+                    "label" : "O bien es regular o ICFT"
+                },
+                {
+                    "value" : 4,
+                    "label" : "GFCI si viene con una fábrica de hielo"
+                }
+            ]
+        },
+            
+        {
+            "name" : "ans5",
+            "type" : "multiple",
+            "label" : "¿Cómo invierte la rotación de un motor?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Gira el motor"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Cambias cualquiera de las fases"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Un motor está hecho para correr en una sola dirección"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Cambiar la frecuencia (Hz) de la potencia"
+                }
+            ]
+        },
+            
+        {
+            "name" : "ans6",
+            "type" : "tof",
+            "label" : "Tienes dos 90&deg; y dos 45&deg; en un EMT. ¿Puedes agregar otros 90&deg;?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Sí"
+                },
+                {
+                    "value" : 2,
+                    "label" : "No"
+                }
+            ]
+        },
+            
+            
+        {
+            "name" : "ans7",
+            "type" : "multiple",
+            "label" : "Un tramo de conducto eléctrico no debe tener más de _________________ cuartos de doblez entre los accesorios y las salidas.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "2"
+                },
+                {
+                    "value" : 2,
+                    "label" : "3"
+                },
+                {
+                    "value" : 3,
+                    "label" : "4"
+                },
+                {
+                    "value" : 4,
+                    "label" : "5"
+                }
+            ]
+        },
+            
+            
+        {
+            "name" : "ans8",
+            "type" : "tof",
+            "label" : "La carga total en cualquier dispositivo de sobreintensidad único en una placa de panel no debe exceder el 80% de su capacidad donde la carga continúa durante 3 o más horas para evitar el sobrecalentamiento del conductor.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Cierto"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Falso"
+                }
+            ]
+        },
+            
+        {
+            "name" : "ans9",
+            "type" : "multiple",
+            "label" : "El método de cableado permitido por el código eléctrico de NYC para circuitos de derivación de cableado en el exterior del edificio es?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "EMT"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Conducto de PVC"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Cable NMC"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Ninguna de las anteriores"
+                }
+            ]
+        },
+            
+        {
+            "name" : "ans10",
+            "type" : "multiple",
+            "label" : "Los balcones de la unidad de vivienda deben tener al menos un reentrada de conexión cuando:",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Tiene un área de 25 pies cuadrados"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Tiene un área de 16 pies cuadrados"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Se puede acceder desde el interior de la unidad de vivienda"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Ninguna de las anteriores"
+                }
+            ]
+        },
+            
+        {
+            "name" : "ans11",
+            "type" : "multiple",
+            "label" : "Dos o más _______________ circuitos de derivación para electrodomésticos pequeños deben proporcionarse para suministrar energía a las tomas de receptáculo en la cocina, el comedor, la sala de desayunos, la despensa o áreas de comedor similares de la unidad de vivienda.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "15A"
+                },
+                {
+                    "value" : 2,
+                    "label" : "20A"
+                },
+                {
+                    "value" : 3,
+                    "label" : "30A"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Either 20A or 30A"
+                }
+            ]
+        },
+            
+            {
+            "name" : "ans12",
+            "type" : "multiple",
+            "label" : "El radio de la curva del borde interior de cualquier curvatura no debe ser inferior a _____________ para el cable de CA tipo.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Cinco veces el conductor más grande dentro del cable"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Tres veces el diámetro del cable"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Cinco veces el diámetro del cable"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Seis veces el diámetro exterior de los conductores"
+                }
+            ]
+        }
+    ]
+}

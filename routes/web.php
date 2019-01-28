@@ -40,6 +40,7 @@ Route::prefix('exam')->group(function(){
 	Route::get('/resume', 'ExamController@resume')->name('resumeExam');
 	Route::get('/complete', 'ExamController@complete');
 	Route::get('/flush', 'ExamController@flush');
+	Route::get('/lang', 'ExamController@changeLanguage')->name('changeLang');
 });
 
 //-----------------------------------------------------------------------------------//

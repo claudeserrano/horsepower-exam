@@ -14,7 +14,7 @@ Electical Exam - {{$data->description->title}}
 
                 <h1> {{$data->description->title}} </h1>
                 <h4> {{$data->description->subtitle}} </h4>
-
+                <a href="{{ route('changeLang') }}" type="button" class="btn btn-primary">To {{ session('en_alt') ? session('en_alt') : 'Spanish' }}</a>
                 </center>
             </div>
             <div class="panel-body">
@@ -23,6 +23,8 @@ Electical Exam - {{$data->description->title}}
                 {{ csrf_field() }}
                 
                 <input type="hidden" name="template_id" value="{{$data->description->id}}" />
+                <input type="hidden" name="template_title" value="{{$data->description->title}}" />
+                <input type="hidden" name="template_subtitle" value="{{$data->description->subtitle}}" />
 
                 <div class="col-lg-12">
                     <center>
@@ -43,7 +45,7 @@ Electical Exam - {{$data->description->title}}
                         @endforeach
 
                         <div class="col-lg-12">
-                            <button type="submit">Submit</button>
+                            <button id="btn-disable-onclick" type="submit">Submit</button>
                         </div>
 
                         <div class="col-lg-12"><br></div>
@@ -63,8 +65,12 @@ Electical Exam - {{$data->description->title}}
 
         $("#examForm").submit(function(){
             var c = confirm("Submit and finalize answers?");
+            $("#btn-disable-onclick").attr('disabled', true);
+            if(!c)
+                $("#btn-disable-onclick").attr('disabled', false);
             return c;
         });
+        
     </script>
 
 @endsection

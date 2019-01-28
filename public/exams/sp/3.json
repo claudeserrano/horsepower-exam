@@ -1,0 +1,231 @@
+{
+    "description" : {
+        "id" : "hpeElec3",
+        "title" : "Electrical Exam",
+        "subtitle" : "Level 3"
+    },
+    "questions" : [
+        {
+            "name" : "ans1",
+            "type" : "multiple",
+            "label" : "Un dispositivo de sobrecorriente (interruptor de circuito o fusible) debe tener un tamaño no menor al 125 por ciento de la carga continua. Si la carga es de 16 A, el dispositivo de sobreintensidad tendrá que tener un tamaño no inferior a:",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "17A"
+                },
+                {
+                    "value" : 2,
+                    "label" : "20A"
+                },
+                {
+                    "value" : 3,
+                    "label" : "23A"
+                },
+                {
+                    "value" : 4,
+                    "label" : "30A"
+                }
+            ]
+        },
+        {
+            "name" : "ans2",
+            "type" : "multiple",
+            "label" : "El cableado incorrecto o el mal manejo de los circuitos de derivación multicable pueden causar que ________________ esté conectado al circuito.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Sobrecarga de los conductores subterráneos"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Sobrecarga de los conductores a tierra"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Destrucción de equipos"
+                },
+                {
+                    "value" : 4,
+                    "label" : "B y C"
+                }
+            ]
+        },
+        {
+            "name" : "ans3",
+            "type" : "multiple",
+            "label" : "¿Cuál es un mejor conductor eléctrico?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Cobre"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Plata"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Níquel"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Ellos son lo mismo"
+                }
+            ]
+        },
+        {
+            "name" : "ans4",
+            "type" : "multiple",
+            "label" : "¿Cuántos watts tiene 1 caballo de fuerza?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "835"
+                },
+                {
+                    "value" : 2,
+                    "label" : "24"
+                },
+                {
+                    "value" : 3,
+                    "label" : "746"
+                },
+                {
+                    "value" : 4,
+                    "label" : "208"
+                }
+            ]
+        },
+        {
+            "name" : "ans5",
+            "type" : "multiple",
+            "label" : "¿Cuántos cables # 10 THHN puedes tirar en una tubería EMT de 3/4\"",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "4"
+                },
+                {
+                    "value" : 2,
+                    "label" : "11"
+                },
+                {
+                    "value" : 3,
+                    "label" : "10"
+                },
+                {
+                    "value" : 4,
+                    "label" : "6"
+                }
+            ]
+        },
+        {
+            "name" : "ans6",
+            "type" : "multiple",
+            "label" : "¿Cuándo unes el conductor neutro al gabinete?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Nunca"
+                },
+                {
+                    "value" : 2,
+                    "label" : "En todos los conmutadores de servicio principal"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Siempre"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Solo uno en cada edificio en el servicio principal"
+                }
+            ]
+        },
+        {
+            "name" : "ans7",
+            "type" : "multiple",
+            "label" : "Cuando una pista de rodadura no excede 24 pulgadas de longitud, se permite que la pista se llene al ________________ por ciento de su área de sección transversal.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "31"
+                },
+                {
+                    "value" : 2,
+                    "label" : "40"
+                },
+                {
+                    "value" : 3,
+                    "label" : "53"
+                },
+                {
+                    "value" : 4,
+                    "label" : "60"
+                }
+            ]
+        },
+        {
+            "name" : "ans8",
+            "type" : "multiple",
+            "label" : "El cableado de la ramificación de la bomba de incendio debe estar protegido por un fusible calificado:",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "300% FLA"
+                },
+                {
+                    "value" : 2,
+                    "label" : "600% FLA"
+                },
+                {
+                    "value" : 3,
+                    "label" : "150% FLA"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Cualquiera de los anteriores"
+                }
+            ]
+        },
+        {
+            "name" : "ans9",
+            "type" : "multiple",
+            "label" : "La caída de tensión combinada de los circuitos derivados y alimentadores no debe exceder:",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "5%"
+                },
+                {
+                    "value" : 2,
+                    "label" : "3%"
+                },
+                {
+                    "value" : 3,
+                    "label" : "4%"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Ninguna de las anteriores"
+                }
+            ]
+        },
+        {
+            "name" : "ans10",
+            "type" : "tof",
+            "label" : "Un circuito derivado individual de 20 A puede suministrar un baño de una sola unidad de vivienda para las tomas de receptáculo y otros equipos dentro del mismo baño.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Cierto"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Falso"
+                }
+            ]
+        }
+    ]
+}
