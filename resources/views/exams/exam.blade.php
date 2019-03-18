@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-Electical Exam - {{$data->description->title}}
+{{$data->description->title}} - {{$data->description->subtitle}}
 @endsection
 
 @section('content')

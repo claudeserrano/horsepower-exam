@@ -50,13 +50,14 @@
                event.preventDefault();
              }
        });
-
+    
         $("#startForm").submit(function(){
-            var c = confirm("Submit and finalize answers?");
+            //var c = confirm("Submit and finalize answers?");
             $("#btn-disable-onclick").attr('disabled', true);
             if(!c)
                 $("#btn-disable-onclick").attr('disabled', false);
             return c;
         });
+    
     </script>
 @endsection
