@@ -16,7 +16,7 @@
           </div>
           <div class="panel-body">
 
-            <form class="form-horizontal" role="form" method="POST" action="{{ route('startExam') }}">
+            <form id="startForm" class="form-horizontal" role="form" method="POST" action="{{ route('startExam') }}">
             
             {{ csrf_field() }}
 
@@ -29,10 +29,6 @@
             @endif
 
             <hr>
-
-            <!--button type='submit' class="btn btn-default" name='type' value='helper'><h4>Experienced Helper</h4></button>
-            <button class="btn btn-default" name='type' value='jrmech'><h4>Junior Mechanic</h4></button>
-            <button class="btn btn-default" name='type' value='mech'><h4>Mechanic</h4></button-->
 
             <button class="btn btn-default" name='type' value='start'><h4>Start Exam</h4></button>
 
@@ -54,5 +50,13 @@
                event.preventDefault();
              }
        });
+
+        $("#startForm").submit(function(){
+            var c = confirm("Submit and finalize answers?");
+            $("#btn-disable-onclick").attr('disabled', true);
+            if(!c)
+                $("#btn-disable-onclick").attr('disabled', false);
+            return c;
+        });
     </script>
 @endsection
