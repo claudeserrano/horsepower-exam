@@ -30,7 +30,7 @@
 
             <hr>
 
-            <button class="btn btn-default" name='type' value='start'><h4>Start Exam</h4></button>
+            <button class="btn btn-default" id="btn-disable-onclick" type="submit" value="start"><h4>Start Exam</h4></button>
 
           </center>
           </div>
@@ -54,9 +54,11 @@
         $("#startForm").submit(function(){
             //var c = confirm("Submit and finalize answers?");
             $("#btn-disable-onclick").attr('disabled', true);
+            /*
             if(!c)
                 $("#btn-disable-onclick").attr('disabled', false);
             return c;
+            */
         });
     
     </script>

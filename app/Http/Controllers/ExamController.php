@@ -206,8 +206,8 @@ class ExamController extends Controller
             $data = json_decode(file_get_contents($file));
         }
         catch(\ErrorException $e){
-            abort(404, $e);
-            //return redirect('exam');
+            //abort(404, $e);
+            return redirect('exam');
         }
 
         return view('exams.exam')->with(['data' => $data]);
