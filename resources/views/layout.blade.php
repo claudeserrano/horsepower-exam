@@ -27,7 +27,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href={{route('home')}}><img style="height:100%" src={{asset('images/Horsepower.png')}} /></a>
+                    <a class="navbar-brand" href={{route('home')}}>
+                        @yield('logo')
+                    </a>
                 </div>
             </nav>
         </div>

@@ -25,7 +25,7 @@ Route::prefix('admin')->group(function(){
 
 
 Route::prefix('exam')->group(function(){
-	Route::get('/', 'ExamController@index');
+	Route::get('/home/{exam_type}', 'ExamController@index');
 	Route::post('/submit', 'ExamController@submit')->name('submitExam');
 	Route::post('/start', 'ExamController@start')->name('startExam');
 	Route::get('/generate', 'ExamController@generate')->name('generate');
@@ -33,6 +33,19 @@ Route::prefix('exam')->group(function(){
 	Route::get('/complete', 'ExamController@complete');
 	Route::get('/flush', 'ExamController@flush');
 	Route::get('/lang', 'ExamController@changeLanguage')->name('changeLang');
+	Route::get('/test', function(){
+		try{
+            $file = 'exams/en/5.json';   //  For revamp
+            $data = json_decode(file_get_contents($file));
+        }
+        catch(\ErrorException $e){
+            //abort(404, $e);
+            return redirect('exam');
+        }
+
+        return view('exams.exam')->with(['data' => $data]);
+	});
+
 });
 
 // Route::get('/google', function(){

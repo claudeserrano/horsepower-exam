@@ -15,12 +15,10 @@ class ExamMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if($request->session()->has('progress')){
-            return $next($request);
-        }
-        else{
+        if(!$request->session()->has('progress')){
             session(['progress' => 0]);
-            return redirect('exam');
         }
+        
+        return $next($request);
     }
 }

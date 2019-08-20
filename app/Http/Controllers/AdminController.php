@@ -56,7 +56,7 @@ class AdminController extends Controller
     public function getEmployeeResults($id)
     {
         $emp = \App\Employee::find($id);
-        return view('admin.exam.results_emp')->with(['emp' => $emp]);
+        return view('admin.exam.results_emp')->with(['emp' => $emp, 'exam' => $emp->exam]);
 
         $scores = $guest->scores->where('level', '<>', 4);
         $final = $guest->scores->where('level', '=', 4)->first();

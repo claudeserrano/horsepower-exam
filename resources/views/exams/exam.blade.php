@@ -14,7 +14,10 @@
 
                 <h1> {{$data->description->title}} </h1>
                 <h4> {{$data->description->subtitle}} </h4>
-                <a href="{{ route('changeLang') }}" type="button" class="btn btn-primary">To {{ session('en_alt') ? session('en_alt') : 'Spanish' }}</a>
+                @if(isset($data->has_alt) && !$data->has_alt)
+                @else
+                    <a href="{{ route('changeLang') }}" type="button" class="btn btn-primary">To {{ session('en_alt') ? session('en_alt') : 'Spanish' }}</a>
+                @endif
                 </center>
             </div>
             <div class="panel-body">
@@ -26,7 +29,7 @@
                 <input type="hidden" name="template_title" value="{{$data->description->title}}" />
                 <input type="hidden" name="template_subtitle" value="{{$data->description->subtitle}}" />
 
-                <div class="col-lg-12">
+                <div id="exam" class="col-lg-12">
                     <center>
                         @foreach($data->questions as $q)
                             <div class="col-lg-12"><h3 name="{{$q->name}}">{{$q->label}}</h3></div>
@@ -34,7 +37,11 @@
                                 <div class="col-lg-6">
                                     <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="{{$q->name}}" value="{{$choice->value}}">
+                                        @if($q->type == "multiple_cb")
+                                            <input class="form-check-input" type="checkbox" name="{{$q->name . '_' . $choice->value}}" value="{{$choice->value}}">
+                                        @else
+                                            <input class="form-check-input" type="radio" name="{{$q->name}}" value="{{$choice->value}}">
+                                        @endif
                                         {{$choice->label}}
                                     </label>
                                     </div>

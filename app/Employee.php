@@ -14,11 +14,11 @@ class Employee extends Model
     public $timestamps = false;
 
     /**
-    * Get the employee's exams
+    * Get the employee's exam
     */
-    public function exams()
+    public function exam()
     {
-        return $this->hasMany('App\Exam');
+        return $this->hasOne('App\Exam');
     }
 
     /**

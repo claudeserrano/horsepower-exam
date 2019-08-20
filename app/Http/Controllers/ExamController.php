@@ -32,11 +32,14 @@ class ExamController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(Request $request, $exam_type)
     {
-        if($request->session()->has('started'))
-            return redirect('exam/generate');
-    	return view('exams.home');
+        $examList = ExamHelper::getExamList($exam_type);
+        if($examList){
+            if($request->session()->has('started'))
+                return redirect('exam/generate');
+            return view('exams.home')->with(['exam_type' => $exam_type]);
+        }
     }
 
     /**
@@ -71,6 +74,7 @@ class ExamController extends Controller
         try{
             $exam->employee_id = $emp->id;
             $exam->score = 0;
+            $exam->type = $request->type;
             $exam->save();
         }
         catch(Exception $e){
@@ -82,7 +86,9 @@ class ExamController extends Controller
         session(['started' => 1]);
         session(['id' => $emp->id]);
         session(['exam_id' => $exam->id]);
+        session(['type' => $exam->type]);
         session(['progress' => $emp->progress]);
+        session(['exam_list' => ExamHelper::getExamList($request->type)]);
         session(['lang' => 'en']);
         session(['en_alt' => 'Spanish']);
         
@@ -99,11 +105,16 @@ class ExamController extends Controller
     {
         //  Exam submit revamp
         $progress = $request->query('progress');
+        
+        //  Get answer key
+        $answers = ExamHelper::getKey(session('exam_list')[$progress - 1]);
 
-        //  Checking for test data
+        /*  Checking for test data
         $test = Test::where('exam_id', session('exam_id'))->where('template_id', $request->template_id)->first();
+
         if(!is_null($test))
             return redirect('exam/generate');
+        */
 
         //  Inserting exam information
         $test = new Test;
@@ -120,31 +131,65 @@ class ExamController extends Controller
             //abort(404, $e); //  Throws a 404 error
         }
 
-        $answers = ExamHelper::getKey($progress);
-
         $score = 0;
+        //  Score tally for calculating percentage
+        $score_perfect = 0;
 
-        for($i = 1; $i <= sizeof($answers); $i++)
-        {
-            $index = 'ans' . $i;
-            $correct = $answers[$i - 1];
-            $answer = $request->$index;
+        $post = $request->post();
+        $correct = false;
 
-            $ans = new Answer;
-            $ans->test_id = $test->id;
-            $ans->value = $answer;
-            $ans->question_id = $index;
-            $ans->correct = false;
+        //  Filter all post values to only get answers
+        $ans = array_values(array_filter(array_keys($post), function($var){
+            return substr($var, 0, 3) == 'ans';
+        }));
+       
+        //  Start score processing
+        for($a = 0; $a < sizeof($ans); $a++){
+            $index = $ans[$a];
+            $list_index = substr($index, 3);
+            //  Check if checkbox
+            $cb_pos = strpos($list_index, "_");
+            $cb_index = null;
 
-            //  If answer is correct
-            if($correct == $answer){
-                $score++;
-                $ans->correct = true;
+            $user_ans = $post[$index];
+            $key_ans = null;
+            
+            //  If checkbox, find cb_index in the array in answer key
+            if($cb_pos){
+                $cb_index = substr($list_index, $cb_pos + 1, strlen($list_index) - $cb_pos);
+                $list_index = substr($list_index, 0, $cb_pos);
+                $key_ans = $answers[$list_index - 1];
+                $varkey = array_search($cb_index, $key_ans);
+                
+                //  If answer not found, add penalty
+                if($varkey === false){
+                    $score -= 1 / sizeof($key_ans);
+                }
+                //  If answer found in possible answers
+                else{
+                    $correct = true;
+                    $score += 1 / sizeof($key_ans);
+                }
+
+            }
+            else{
+                $key_ans = $answers[$list_index - 1];
+
+                if($key_ans == $user_ans){
+                    $correct = true;
+                    $score++;
+                } 
             }
 
-            $ans->save();
-        }
+            $ans_record = new Answer;
+            $ans_record->test_id = $test->id;
+            $ans_record->value = $user_ans;
+            $ans_record->question_id = $index;
+            $ans_record->correct = $correct;
+            
+            $ans_record->save();
 
+        }
 
         $score = $score / sizeof($answers) * 100;
         $test->score = $score;
@@ -152,12 +197,20 @@ class ExamController extends Controller
 
         $emp = Employee::find(session('id'));
 
-        //  If score is more than 70% or it's the last exam
-        if($score >= 70 || $emp->progress >= 3)
-            $emp->progress += 1;
-        //  Skip to school exam
-        else{
-            $emp->progress = 4;
+        //  Progress checking
+        $emp->progress += 1;
+
+        //  Special rules per exam
+        switch(session('type')){
+            //  If score is less than 70% & still not last exam, skip to last exam
+            case 'hpe':
+                if($score < 70 && $emp->progress < 4)
+                    $emp->progress = 4;
+                break;
+            case 'mfs':
+                break;
+            default:
+                break;
         }
 
         $emp->save();
@@ -166,7 +219,7 @@ class ExamController extends Controller
         session(['progress' => $emp->progress]);
 
         //  If progress is less than or equal to total pages, return exam page, else redirect to completion page
-        if(session('progress') <= self::PAGE_NUM){
+        if(session('progress') <= sizeof(session('exam_list'))){
             return redirect('exam/generate');
         }
         else{
@@ -200,9 +253,8 @@ class ExamController extends Controller
     {
         if($request->session()->get('complete'))
             return redirect('exam/complete');
-
         try{
-            $file = 'exams/'. session('lang') .'/' . session('progress') . '.json';   //  For revamp
+            $file = 'exams/'. session('lang') .'/' . session('exam_list')[session('progress') - 1] . '.json';   //  For revamp
             $data = json_decode(file_get_contents($file));
         }
         catch(\ErrorException $e){
@@ -221,11 +273,13 @@ class ExamController extends Controller
      */
     public function complete(Request $request)
     {
-        if(!$request->session()->has('progress'))
+        if(!$request->session()->has('progress')){
             return redirect('exam');
+            
+        }
         else{
             //  If progress is less than total pages, return exam page, else redirect to completion page
-            if(session('progress') <= self::PAGE_NUM){
+            if(session('progress') <= sizeof(session('exam_list'))){
                 return redirect('exam/generate');
             }
             else{
@@ -246,7 +300,7 @@ class ExamController extends Controller
     public function flush(Request $request)
     {
         $request->session()->flush();
-        return redirect('exam');
+        return redirect('exam/home/hpe');
     }
 
     /**

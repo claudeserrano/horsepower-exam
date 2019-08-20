@@ -6,11 +6,11 @@
 
 @section('content')
   <div class="container content">
-    @foreach($emp->exams as $exam)
       <div class="panel panel-default">
         <div class="panel-heading">
           <center>
-          <h1> Exam of {{date_format($exam->created_at, 'Y/m/d h:m:s')}} </h1>
+          <h1> {{$emp->name}} Results </h1>
+          <h3> Exam of {{date_format($exam->created_at, 'Y/m/d h:m:s')}} </h3>
           </center>
         </div>
         <div class="panel-body">
@@ -27,33 +27,34 @@
                 </div>
             </div>
           @endforeach
-          <div class="col-lg-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4>School Classification</h4>
-                </div>
-                <div class="panel-body">
-                
-                  <div class="col-lg-1">
+          @if($exam->type == 'hpe')
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4>School Classification</h4>
                   </div>
-                @for($i = 1; $i <= 5; $i++)
-                  <div class="col-lg-2">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4>Year {{$i}}</h4>
-                          </div>
-                          <div class="panel-body">
-                            <h4><b>Score :</b> <br/> {{$emp->getClassAvgScore($exam->id, $i)}}  %</h4>
-                          </div>
-                      </div>
+                  <div class="panel-body">
+                  
+                    <div class="col-lg-1">
+                    </div>
+                  @for($i = 1; $i <= 5; $i++)
+                    <div class="col-lg-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4>Year {{$i}}</h4>
+                            </div>
+                            <div class="panel-body">
+                              <h4><b>Score :</b> <br/> {{$emp->getClassAvgScore($exam->id, $i)}}  %</h4>
+                            </div>
+                        </div>
+                    </div>
+                  @endfor
                   </div>
-                @endfor
                 </div>
-              </div>
-          </div>
+            @endif
+            </div>
           </center>
         </div>
       </div>
-    @endforeach
   </div>
 @endsection

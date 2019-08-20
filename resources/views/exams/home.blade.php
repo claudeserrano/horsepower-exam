@@ -1,7 +1,12 @@
 @extends('layout')
 
+@section('logo')
+
+    <img style="height:100%" src={{asset('images/' . $exam_type . '.png')}} />
+@stop
+
 @section('title')
-    HPE Electrician Exams
+    Electrician Exams
 @stop
 
 @section('content')
@@ -23,6 +28,7 @@
             <center>
             <h3>Full Name</h3>
             <input class="form-check-input" type="text" style="width:50%" name="name">
+            <input class="form-check-input" type="hidden" style="width:50%" name="type" value="{{$exam_type}}">
 
             @if($errors->has('name'))
               <p class="red">Please input your full name.</p>

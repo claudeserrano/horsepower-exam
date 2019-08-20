@@ -1,0 +1,409 @@
+{
+    "description" : {
+        "id" : "mfsElec",
+        "title" : "MFS Electrical Exam",
+        "subtitle" : "Final Exam"
+    },
+    "has_alt" : false,
+    "questions" : [
+        {
+            "name" : "ans1",
+            "type" : "tof",
+            "label" : "As long as the power cord you are using has a ground prong in place, you are at no risk of electric shock.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans2",
+            "type" : "multiple",
+            "label" : "The flow of electric current through a conductor is measured in _____________.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Volts"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Amps"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Ohms"
+                }
+            ]
+        },
+        {
+            "name" : "ans3",
+            "type" : "multiple",
+            "label" : "Materials that do not allow the flow of electric current have very ______________ resistance.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "High"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Low"
+                }
+            ]
+        },
+        {
+            "name" : "ans4",
+            "type" : "multiple",
+            "label" : "What should you do if you are being shocked and are unable to release your grip on the object containing the electric circuit?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Try to jump away from the object"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Try to fall backwards"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Try to allow your knees to collapse"
+                }
+            ]
+        },
+        {
+            "name" : "ans5",
+            "type" : "multiple",
+            "label" : "When electricity flows through an electric circuit, the circuit is said to be _____________.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Opened"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Interrupted"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Completed"
+                }
+            ]
+        },
+        {
+            "name" : "ans6",
+            "type" : "multiple_cb",
+            "label" : "Select which tools can create 'kick-back'?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Power saw"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Hammer"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Electric drill"
+                }
+            ]
+        },
+        {
+            "name" : "ans7",
+            "type" : "tof",
+            "label" : "Wearing any required PPE is one of your most important job duties.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans8",
+            "type" : "multiple",
+            "label" : "Which one of the following is considered PPE and shall be worn at all times when using Power Tools?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Hard Hat"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Safety Glasses"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Work Boots"
+                },
+                {
+                    "value" : 4,
+                    "label" : "All of these items"
+                }
+            ]
+        },
+        {
+            "name" : "ans9",
+            "type" : "tof",
+            "label" : "Power Cords Should always be yanked by the cord in order to remove it from the receptacle?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans10",
+            "type" : "tof",
+            "label" : "When Working with Electrical Items, your boots must have rubber soles.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans11",
+            "type" : "multiple",
+            "label" : "Is it permissible to run fire alarm wire through the same hole as 120V wiring?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Yes"
+                },
+                {
+                    "value" : 2,
+                    "label" : "No"
+                }
+            ]
+        },
+        {
+            "name" : "ans12",
+            "type" : "multiple",
+            "label" : "What is a fish tape used for?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Fishing"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Used to record underwater fish noises"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Wire retrieval"
+                }
+            ]
+        },
+        {
+            "name" : "ans13",
+            "type" : "multiple",
+            "label" : "What is the maximum number of bends allowed in a run of conduit?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Any combination of bends to a total of 360 degrees"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Any combination of bends to a total of 360 degrees, excluding offsets"
+                },
+                {
+                    "value" : 3,
+                    "label" : "No more than four 90 degree bends"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Any amount is allowed"
+                }
+            ]
+        },
+        {
+            "name" : "ans14",
+            "type" : "multiple",
+            "label" : "When correctly measuring a standard alarm power supply voltage your digital VOM reads +6.80 VDC. No devices are connected to the terminals. This means that :",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "The power supply is working"
+                },
+                {
+                    "value" : 2,
+                    "label" : "The positive lead of the meter is connected incorrectly"
+                },
+                {
+                    "value" : 3,
+                    "label" : "The voltage is too low for the system devices to function correctly"
+                },
+                {
+                    "value" : 4,
+                    "label" : "The wire gauge is too small"
+                }
+            ]
+        },
+        {
+            "name" : "ans15",
+            "type" : "multiple",
+            "label" : "When running cable in a drop ceiling, if you wish to cross a firewall :",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "You must use metallic sheathed cable"
+                },
+                {
+                    "value" : 2,
+                    "label" : "You must use FT-4 cable"
+                },
+                {
+                    "value" : 3,
+                    "label" : "You may penetrate the fire wall, as long as you seal the hole around the cable"
+                },
+                {
+                    "value" : 4,
+                    "label" : "You may not penetrate the firewall"
+                }
+            ]
+        },
+        {
+            "name" : "ans16",
+            "type" : "tof",
+            "label" : "When mounting smoke detectors on a wall, the sensing device has to be between four and 12 inches down from the ceiling.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans17",
+            "type" : "tof",
+            "label" : "NFPA 70 is the National Fire Alarm Code",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans18",
+            "type" : "multiple",
+            "label" : "Which of the following devices must be tested for functionality on an annual basis?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Smoke detectors"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Control panels"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Heat detectors"
+                },
+                {
+                    "value" : 4,
+                    "label" : "Pull stations"
+                },
+                {
+                    "value" : 5,
+                    "label" : "All of the above"
+                },
+                {
+                    "value" : 6,
+                    "label" : "None of the above"
+                }
+            ]
+        },
+        {
+            "name" : "ans19",
+            "type" : "tof",
+            "label" : "Fire alarm control panels must be painted red for ease of identification as a fire alarm device.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans20",
+            "type" : "multiple",
+            "label" : "Smoke alarms should be replaced around the __________ year mark.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "5"
+                },
+                {
+                    "value" : 2,
+                    "label" : "7"
+                },
+                {
+                    "value" : 3,
+                    "label" : "10"
+                },
+                {
+                    "value" : 4,
+                    "label" : "20"
+                }
+            ]
+        },
+        {
+            "name" : "ans21",
+            "type" : "multiple",
+            "label" : "The term 'out of service' is intended to imply that:",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "A significant portion of the fire alarm system is not in operation"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Any portion of the fire alarm system is not in operation"
+                },
+                {
+                    "value" : 3,
+                    "label" : "The fire alarm system is totally inoperative"
+                },
+                {
+                    "value" : 4,
+                    "label" : "All of the above"
+                }
+            ]
+        }
+    ]
+}
