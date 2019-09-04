@@ -57,12 +57,23 @@ class Employee extends Model
         if(isset($test)){
             $answers = $test->answers;
             for($i = $min_index; $i < $max_index; $i++){
-                $temp += $answers[$i]->correct;
+                $ans = $this->searchForTestId('ans' . ($i + 1), $answers);
+                if($ans != null)
+                    $temp += $ans->correct;
             }
         }
         else
             return 0;
             
         return number_format($temp / 3 * 100,2);
+    }
+
+    private function searchForTestId($id, $answers){
+        foreach($answers as $ans){
+            if($ans['question_id'] == $id){
+                return $ans;
+            }
+        }
+        return null;
     }
 }

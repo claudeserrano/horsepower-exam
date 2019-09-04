@@ -136,7 +136,6 @@ class ExamController extends Controller
         $score_perfect = 0;
 
         $post = $request->post();
-        $correct = false;
 
         //  Filter all post values to only get answers
         $ans = array_values(array_filter(array_keys($post), function($var){
@@ -153,6 +152,8 @@ class ExamController extends Controller
 
             $user_ans = $post[$index];
             $key_ans = null;
+            
+            $correct = false;
             
             //  If checkbox, find cb_index in the array in answer key
             if($cb_pos){
@@ -174,7 +175,6 @@ class ExamController extends Controller
             }
             else{
                 $key_ans = $answers[$list_index - 1];
-
                 if($key_ans == $user_ans){
                     $correct = true;
                     $score++;
@@ -186,7 +186,6 @@ class ExamController extends Controller
             $ans_record->value = $user_ans;
             $ans_record->question_id = $index;
             $ans_record->correct = $correct;
-            
             $ans_record->save();
 
         }
