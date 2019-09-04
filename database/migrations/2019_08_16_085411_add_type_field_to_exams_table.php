@@ -14,7 +14,7 @@ class AddTypeFieldToExamsTable extends Migration
     public function up()
     {
         Schema::table('exams', function (Blueprint $table) {
-            $table->string('type');
+            $table->string('type')->nullable();
         });
     }
 
