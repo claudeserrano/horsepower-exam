@@ -14,9 +14,12 @@ class ExamHelper
 		$this->answers[2] = [2,4,2,2,3,2,4,1,1,1];
 		$this->answers[3] = [3,4,3,3,1,1,1,3,2,3,4,2,4,2,1];
 		$this->answers[4] = [2,2,1,3,3,[1,3],1,4,2,1,2,3,3,3,3,1,1,5,2,3,4];
+		$this->answers[5] = [2,2,1,3,3,[1,3],1,4,2,1];
+		$this->answers[6] = [2,3,3,3,3,1,1,5,2,3,4];
 
 		$this->examList['hpe'] = [1,2,3,4];
-		$this->examList['mfs'] = [5];
+		$this->examList['mfs'] = [6,7];
+		//$this->examList['mfs_'] = [6,7];
 	}
 
 	public function getKey($level)

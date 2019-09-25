@@ -1,0 +1,184 @@
+{
+    "description" : {
+        "id" : "mfsElecSafety",
+        "title" : "MFS Electrical Exam",
+        "subtitle" : "General Electrical Safety Questions"
+    },
+    "has_alt" : false,
+    "questions" : [
+        {
+            "name" : "ans1",
+            "type" : "tof",
+            "label" : "As long as the power cord you are using has a ground prong in place, you are at no risk of electric shock.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans2",
+            "type" : "multiple",
+            "label" : "The flow of electric current through a conductor is measured in _____________.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Volts"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Amps"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Ohms"
+                }
+            ]
+        },
+        {
+            "name" : "ans3",
+            "type" : "multiple",
+            "label" : "Materials that do not allow the flow of electric current have very ______________ resistance.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "High"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Low"
+                }
+            ]
+        },
+        {
+            "name" : "ans4",
+            "type" : "multiple",
+            "label" : "What should you do if you are being shocked and are unable to release your grip on the object containing the electric circuit?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Try to jump away from the object"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Try to fall backwards"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Try to allow your knees to collapse"
+                }
+            ]
+        },
+        {
+            "name" : "ans5",
+            "type" : "multiple",
+            "label" : "When electricity flows through an electric circuit, the circuit is said to be _____________.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Opened"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Interrupted"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Completed"
+                }
+            ]
+        },
+        {
+            "name" : "ans6",
+            "type" : "multiple_cb",
+            "label" : "Select which tools can create 'kick-back'?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Power saw"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Hammer"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Electric drill"
+                }
+            ]
+        },
+        {
+            "name" : "ans7",
+            "type" : "tof",
+            "label" : "Wearing any required PPE is one of your most important job duties.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans8",
+            "type" : "multiple",
+            "label" : "Which one of the following is considered PPE and shall be worn at all times when using Power Tools?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "Hard Hat"
+                },
+                {
+                    "value" : 2,
+                    "label" : "Safety Glasses"
+                },
+                {
+                    "value" : 3,
+                    "label" : "Work Boots"
+                },
+                {
+                    "value" : 4,
+                    "label" : "All of these items"
+                }
+            ]
+        },
+        {
+            "name" : "ans9",
+            "type" : "tof",
+            "label" : "Power Cords Should always be yanked by the cord in order to remove it from the receptacle?",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        },
+        {
+            "name" : "ans10",
+            "type" : "tof",
+            "label" : "When Working with Electrical Items, your boots must have rubber soles.",
+            "choices" : [
+                {
+                    "value" : 1,
+                    "label" : "True"
+                },
+                {
+                    "value" : 2,
+                    "label" : "False"
+                }
+            ]
+        }
+    ]
+}
